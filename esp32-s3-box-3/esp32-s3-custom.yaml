@@ -771,8 +771,8 @@ display:
           if (time.is_valid()) {
             it.strftime(
               it.get_width() / 2,
-              it.get_height() / 2,
-              id(clock_font),
+              it.get_height() / 2 + 10,
+              id(my_font),
               Color::WHITE,
               TextAlign::CENTER,
               "%H:%M",
