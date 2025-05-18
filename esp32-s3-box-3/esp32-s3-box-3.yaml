@@ -768,7 +768,6 @@ display:
         lambda: |-
           it.fill(id(idle_color));
           it.fill(Color::BLACK);
-      
           auto time = id(homeassistant_time).now();
           if (time.is_valid()) {
             it.strftime(
