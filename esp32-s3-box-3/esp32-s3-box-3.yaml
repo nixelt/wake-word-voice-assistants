@@ -770,6 +770,11 @@ display:
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_idle), ImageAlign::CENTER);
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
+
+          auto time = id(homeassistant_time).now();
+          if (time.is_valid()) {
+            it.strftime(it.get_width() / 2, 200, id(my_font), TextAlign::CENTER, "%H:%M:%S", time);
+          }
       - id: listening_page
         lambda: |-
           it.fill(id(listening_color));
