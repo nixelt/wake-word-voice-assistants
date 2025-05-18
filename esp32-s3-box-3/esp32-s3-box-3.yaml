@@ -3,7 +3,7 @@ substitutions:
   name: esp32-s3-box-3
   friendly_name: ESP32 S3 Box 3
   loading_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/loading_320_240.png
-  idle_illustration_file: https://github.com/nixelt/wake-word-voice-assistants/blob/main/casita/idle_320_240.png
+  idle_illustration_file: https://github.com/nixelt/wake-word-voice-assistants/raw/main/casita/idle_320_240.png
   listening_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/listening_320_240.png
   thinking_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/thinking_320_240.png
   replying_illustration_file: https://github.com/esphome/wake-word-voice-assistants/raw/main/casita/replying_320_240.png
