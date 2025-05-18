@@ -774,7 +774,15 @@ display:
 
           auto time = id(homeassistant_time).now();
           if (time.is_valid()) {
-            it.strftime(it.get_width() / 2, 200, id(my_font), TextAlign::CENTER, "%H:%M", time);
+            it.strftime(
+              it.get_width() / 2,
+              it.get_height() / 2 + 10,
+              id(my_font),
+              Color::WHITE,
+              TextAlign::CENTER,
+              "%H:%M",
+              time
+            );
           }
       - id: listening_page
         lambda: |-
