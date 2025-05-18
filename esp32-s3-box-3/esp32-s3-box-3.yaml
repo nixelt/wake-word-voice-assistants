@@ -766,13 +766,12 @@ display:
     pages:
       - id: idle_page
         lambda: |-
-          it.fill(id(idle_color));
           it.fill(Color::BLACK);
           auto time = id(homeassistant_time).now();
           if (time.is_valid()) {
             it.strftime(
-              it.get_width() / 2,          // X: центр
-              it.get_height() / 2,         // Y: центр
+              it.get_width() / 2,
+              it.get_height() / 2,
               id(clock_font),
               Color::WHITE,
               TextAlign::CENTER,
