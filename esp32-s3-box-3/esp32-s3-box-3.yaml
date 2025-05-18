@@ -766,10 +766,14 @@ display:
     pages:
       - id: idle_page
         lambda: |-
-          it.fill(Color::BLACK);
+          it.fill(id(idle_color));
+          it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_idle), ImageAlign::CENTER);
+          id(draw_timer_timeline).execute();
+          id(draw_active_timer_widget).execute();
+
           auto time = id(homeassistant_time).now();
           if (time.is_valid()) {
-            it.strftime(160, 120, id(my_font), "%H:%M", time);
+            it.strftime(it.get_width() / 2, 200, id(my_font), TextAlign::CENTER, "%H:%M", time);
           }
       - id: listening_page
         lambda: |-
